@@ -1,0 +1,30 @@
+torch
+transformers
+sentence-transformers
+datasets
+pandas
+numpy
+scikit-learn
+
+# Vector Store
+faiss-cpu
+
+# LLM Integration Gemini
+google-generativeai
+
+# RAG Evaluation
+ragas
+
+# Web Application
+streamlit
+
+# Utilities
+python-dotenv
+tqdm
+accelerate>=0.26.0
+
+# Langchain for RAGAS LLM configuration
+langchain-google-genai
+langchain-community # For SentenceTransformerEmbeddings
+# Ragas might also need langchain core, but often pulls it as a dependency.
+# Adding explicitly if needed: langchain-core, langchain

@@ -1,0 +1,66 @@
+# Virtual environment
+venv/
+.venv/
+env/
+ENV/
+*/venv/
+*/.venv/
+*/env/
+*/ENV/
+
+# Environment variables file
+.env
+*.env
+env.yaml
+env.yml
+*.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.project
+*.classpath
+*.cproject
+*.launch
+*.settings
+*.tmPreferences
+*.sublime-project
+*.sublime-workspace
+
+# macOS specific
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+# Log files
+*.log
+logs/
+
+# Streamlit specific (if any, usually not needed to ignore for app code)
+# .streamlit/ (usually contains secrets.toml which should be ignored if used)
+
+# Data files (if large or generated, consider adding specific patterns)
+# data/raw_dataset/ # Example if you had a large raw dataset folder
+# models/ # If models are very large and you don't want to version them directly
+
+# FAISS index (can be large and is built from data)
+*.index
+
+# Checkpoints from model training
+*_checkpoints/
+checkpoint-*/
