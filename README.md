@@ -34,24 +34,28 @@ The core of the system leverages a sentence embedding model fine-tuned on the qu
 
 ## 📂 Project Structure
 
+```
 quote_rag_system/
+├── .env                            # Stores API keys (e.g., GOOGLE_API_KEY) - GITIGNORED
+├── .gitignore                      # Specifies intentionally untracked files for Git
+├── README.md                       # This file
+├── requirements.txt                # Python dependencies
 ├── data/
 │   └── processed_quotes.csv        # Cleaned and preprocessed dataset
 ├── models/
 │   ├── fine_tuned_sentence_transformer/ # Saved fine-tuned embedding model
 │   ├── quotes_faiss.index          # FAISS index for quote embeddings
 │   └── ragas_evaluation_results.csv # RAGAS evaluation scores
+│   └── fine_tuned_sentence_transformer_checkpoints/ # Checkpoints from fine-tuning (GITIGNORED)
 ├── src/
+│   ├── __init__.py                 # Makes src a Python package (optional but good practice)
 │   ├── data_preparation.py         # Script for data download and preprocessing
 │   ├── fine_tuning.py              # Script for fine-tuning the embedding model
 │   ├── rag_pipeline.py             # Core RAG logic (retrieval and generation)
 │   ├── evaluation.py               # Script for RAGAS evaluation
 │   └── app.py                      # Streamlit application
-├── .env                            # Stores API keys (e.g., GOOGLE_API_KEY) - GITIGNORED
-├── .gitignore                      # Specifies intentionally untracked files for Git
-├── requirements.txt                # Python dependencies
-└── README.md                       # This file
-
+└── venv/                           # Python virtual environment (GITIGNORED)
+```
 
 ## 🚀 Setup and Installation
 
