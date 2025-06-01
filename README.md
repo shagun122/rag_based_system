@@ -192,4 +192,3 @@ The core `rag_pipeline.py` script orchestrates the following:
 
 ---
 
-*This project was developed as part of an assignment.*
